@@ -18,14 +18,8 @@ Target variable: income
 
 Features include age, education level, occupation, workclass, etc
 
-Models used
-        Model           Accuracy  AUC        Precision Recall    F1        MCC
-0  Logistic Regression  0.842035  0.896977   0.718975  0.598667  0.653328  0.556026
-1        Decision Tree  0.805735  0.744672   0.606355  0.623333  0.614727  0.484967
-2                  KNN  0.814023  0.830714   0.644275  0.562667  0.600712  0.482086
-3          Naive Bayes  0.402122  0.648931   0.288411  0.957333  0.443278  0.200031
-4        Random Forest  0.843030  0.897054   0.715175  0.612667  0.659964  0.561542
-5              XGBoost  0.864081  0.923257   0.770701  0.645333  0.702467  0.619354
+<img width="1022" height="310" alt="image" src="https://github.com/user-attachments/assets/ad7666dc-d18d-4395-8f62-2501354d6547" />
+
 
 Observations on Model Performance:
 
@@ -34,4 +28,5 @@ Observations on Model Performance:
 3. kNN: Moderate performance. Sensitive to high dimensionality (96 features after encoding). Scaling improved results.
 4. Naive Bayes: Moderate performance. Sensitive to high dimensionality (96 features after encoding). Scaling improved results.
 5. Random Forest: Improved stability and performance over single Decision Tree. Handles feature interactions better.
+
 6. XGBoost: Best performing model across all metrics. Highest AUC and MCC. Boosting improves overall predictive power and generalization.
